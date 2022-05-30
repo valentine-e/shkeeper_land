@@ -1,0 +1,36 @@
+.button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 28px;
+
+  background: linear-gradient(90.62deg, #81bdff 0.54%, #5ed9ff 101.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--link-accent-color);
+
+  &:hover {
+    background: linear-gradient(90.62deg, #a2ceff 0.54%, #85e2ff 101.81%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0px 0px 16px rgba(94, 217, 255, 0.51);
+    text-shadow: 0px 0px 16px rgba(133, 226, 255, 0.55);
+  }
+}
+
+.button--accent {
+  padding: 12px 28px;
+  border-radius: 12px;
+  color: var(--primary-background-color);
+  background: linear-gradient(93.12deg, #81bdff 5.17%, #5ed9ff 100%);
+  -webkit-text-fill-color: var(--primary-background-color);
+
+  &:hover {
+    background: linear-gradient(93.06deg, #a2ceff 6.02%, #85e2ff 91.21%);
+    box-shadow: 0px 0px 16px rgba(94, 217, 255, 0.51);
+  }
+}
