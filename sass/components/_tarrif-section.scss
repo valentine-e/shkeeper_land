@@ -1,0 +1,122 @@
+.tariff-section {
+  margin-bottom: 120px;
+}
+
+.tariff-section__title {
+  margin-bottom: 68px;
+}
+
+.tariff-section__container {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+.tariff-section__item {
+  position: relative;
+  background: #ffffff;
+  border-radius: 22px;
+  width: calc(100% / 3);
+  padding: 102px 30px 36px;
+  height: max-content;
+}
+
+.tariff-section__info {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #52a4ff;
+  margin-bottom: 24px;
+}
+
+.tariff-section__price {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--grey-text-color);
+  margin-bottom: 22px;
+}
+
+.tariff-section__price--number {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1.2;
+
+  color: var(--grey-text-color);
+}
+
+.tariff-section__price--bold {
+  color: var(--grey-text-color);
+  margin-bottom: 29px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.tariff-section__cardlist {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--grey-text-color);
+  list-style: inside;
+  margin-bottom: 40px;
+
+  & > li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.tariff-section__button {
+  display: block;
+  padding: 22px;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.1;
+  color: var(--main-text-color);
+  background: #52a4ff;
+  border-radius: 12px;
+}
+
+.tariff-section__image {
+  position: absolute;
+  top: -38px;
+  left: -3px;
+
+  &--2 {
+    top: -22px;
+    left: 19px;
+  }
+
+  &--3 {
+    top: -35px;
+    left: 8px;
+  }
+}
+
+.tariff-section__content {
+  margin-top: 22px;
+}
+
+.tariff-section__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--grey-text-color);
+  list-style: inside;
+  margin-bottom: 16px;
+}
+
+.tariff-section__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+
+  margin-left: 25px;
+}
+
+.tariff-section__button--mt {
+  margin-top: 42px;
+}

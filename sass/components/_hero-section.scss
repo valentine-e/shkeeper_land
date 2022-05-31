@@ -1,11 +1,12 @@
 .hero-box {
   display: flex;
+  margin-bottom: 95px;
 }
 
 .hero-section__title {
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 1.22;
   margin-bottom: 10px;
   margin-top: 51px;
@@ -16,6 +17,10 @@
   font-size: 16px;
   line-height: 1.62;
   margin-bottom: 42px;
+}
+
+.hero-section__thumb {
+  position: relative;
 }
 
 .bcg-ellipse {
@@ -29,8 +34,15 @@
   filter: blur(100px);
 }
 
-.hero-section__thumb {
-  position: relative;
+.bcg-ellipse--1 {
+  position: absolute;
+  width: 528px;
+  height: 522px;
+  left: 85px;
+  top: 93px;
+
+  background: rgba(87, 167, 255, 0.18);
+  filter: blur(240px);
 }
 
 .bcg-ellipse--border {
@@ -69,7 +81,7 @@
   filter: blur(8px);
 }
 
-.bcg-ellipse--border-4 {
+.bcg-ellipse--border-5 {
   width: 770px;
   height: 770px;
   left: -110px;
@@ -79,7 +91,7 @@
   filter: blur(30px);
 }
 
-.bcg-ellipse--border-4 {
+.bcg-ellipse--border-6 {
   position: absolute;
   width: 4px;
   height: 4px;
@@ -90,7 +102,7 @@
   filter: blur(3px);
 }
 
-.bcg-ellipse--border-6 {
+.bcg-ellipse--border-7 {
   position: absolute;
   width: 11px;
   height: 11px;
@@ -99,4 +111,19 @@
 
   background: #6dcdff;
   filter: blur(5px);
+}
+
+.bcg-ellipse--border-8 {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 537px;
+  bottom: -109px;
+
+  background: rgba(109, 205, 255, 0.88);
+  filter: blur(15px);
+}
+
+.hero__button--mr {
+  margin-right: 26px;
 }

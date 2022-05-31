@@ -28,7 +28,8 @@ img {
 }
 
 body {
-  // font-family: Montserrat, sans-serif;
+  font-family: "Open Sans", sans-serif;
+
   background-color: var(--primary-background-color);
   color: var(--main-text-color);
 }
@@ -36,8 +37,10 @@ body {
 :root {
   --primary-background-color: #223138;
   --main-text-color: #ffffff;
+  --grey-text-color: #223138;
   --link-accent-color: #5ed8ff;
-  --gradient: linear-gradient(270.96deg, #5ed9ff 0.82%, #81bdff 96.26%);
+  --bgr-box-color: rgba(242, 242, 242, 0.02);
+  --bgr-border-color: rgba(221, 221, 221, 0.07);
   // --primary-text-color: #e9ecef;
 
   // --primary-font: Montserrat, sans-serif;

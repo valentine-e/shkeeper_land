@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -33,4 +34,28 @@
     background: linear-gradient(93.06deg, #a2ceff 6.02%, #85e2ff 91.21%);
     box-shadow: 0px 0px 16px rgba(94, 217, 255, 0.51);
   }
+}
+
+.bacground-box {
+  background: var(--bgr-box-color);
+  border: 1px solid var(--bgr-border-color);
+  backdrop-filter: blur(55px);
+  border-radius: 22px;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.section-subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.34;
+  margin-bottom: 18px;
 }
