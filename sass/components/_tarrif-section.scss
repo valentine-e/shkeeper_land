@@ -1,5 +1,6 @@
 .tariff-section {
   margin-bottom: 120px;
+  position: relative;
 }
 
 .tariff-section__title {
@@ -76,8 +77,12 @@
   font-size: 18px;
   line-height: 1.1;
   color: var(--main-text-color);
-  background: #52a4ff;
+  background: var(--tariff-button-color);
   border-radius: 12px;
+
+  &:hover {
+    background-color: #1e79ff;
+  }
 }
 
 .tariff-section__image {
@@ -119,4 +124,15 @@
 
 .tariff-section__button--mt {
   margin-top: 42px;
+}
+
+.tariff-section__ellipse {
+  position: absolute;
+  width: 532px;
+  height: 548px;
+  right: -197px;
+  top: 340px;
+
+  background: rgba(89, 149, 255, 0.77);
+  filter: blur(555px);
 }

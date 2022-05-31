@@ -3,6 +3,28 @@
   margin-bottom: 132px;
 }
 
+.use-section__ellipse {
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  left: -198px;
+  top: 311px;
+
+  background: rgba(89, 149, 255, 0.4);
+  filter: blur(555px);
+}
+
+.use-section__ellipse--2 {
+  position: absolute;
+  width: 111px;
+  height: 111px;
+  right: 170px;
+  top: 450px;
+
+  background: rgba(89, 149, 255, 0.26);
+  filter: blur(45px);
+}
+
 .use-section--1 {
   position: absolute;
   width: 505px;
