@@ -29,9 +29,10 @@ img {
 
 body {
   font-family: "Open Sans", sans-serif;
-
-  background-color: var(--primary-background-color);
+  overflow-x: hidden;
+  // background-color: var(--primary-background-color);
   color: var(--main-text-color);
+  background: linear-gradient(99.36deg, #29404a -4.07%, #1e292f 93.88%);
 }
 
 :root {
@@ -41,14 +42,16 @@ body {
   --link-accent-color: #5ed8ff;
   --bgr-box-color: rgba(242, 242, 242, 0.02);
   --bgr-border-color: rgba(221, 221, 221, 0.07);
+  --faq-borderline: rgba(242, 242, 242, 0.08);
   --tariff-button-color: #52a4ff;
+  --faq-blue-color: #5ed8ff;
   // --primary-text-color: #e9ecef;
 
   // --primary-font: Montserrat, sans-serif;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   padding: 0 30px;
   margin: 0 auto;
 }

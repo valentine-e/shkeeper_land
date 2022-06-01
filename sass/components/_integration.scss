@@ -5,7 +5,7 @@
 
 .integration-section__container {
   margin: 0 auto;
-  width: 817px;
+  max-width: 817px;
 }
 
 .integration-section__content {
@@ -29,6 +29,10 @@
   margin-bottom: 24px;
 }
 
+.integration-section__content--position {
+  position: relative;
+}
+
 .integration-section__description {
   font-weight: 300;
   font-size: 14px;
@@ -42,7 +46,8 @@
 .integration-section__thumb {
   position: absolute;
   left: 476px;
-  top: 115px;
+  top: 50%;
+  transform: translateY(-50%);
   width: min-content;
   padding: 28px 50px;
   background: #ffffff;

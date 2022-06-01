@@ -1,0 +1,109 @@
+.map-section .section-title {
+  margin-bottom: 46px;
+}
+
+.map-section__container {
+  position: relative;
+  margin: 0 auto 140px;
+  max-width: 948px;
+}
+
+.map-section__box {
+  position: relative;
+  right: -10%;
+  justify-content: center;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.map-section__content {
+  margin-left: 10px;
+}
+
+.map-section__item {
+  padding-left: 10px;
+  height: 105px;
+  width: 32%;
+}
+
+.map-section__item--borderleft {
+  border-left: 1px solid rgba(109, 205, 255, 0.6);
+}
+
+.horisontal-line {
+  height: 118px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 67%;
+  border-bottom: 1px solid rgba(109, 205, 255, 0.6);
+}
+
+.map-section__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+
+.map-section__description {
+  white-space: wrap;
+  max-width: 260px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.map-section-dot {
+  position: absolute;
+  top: 89px;
+  left: -28px;
+  z-index: 10;
+}
+
+.map-section-dot--2 {
+  position: absolute;
+  top: 99px;
+  left: 138px;
+  z-index: 10;
+}
+
+.map-section-dot--3 {
+  position: absolute;
+  top: 90px;
+  left: 289px;
+  z-index: 10;
+}
+
+.map-section-dot--4 {
+  position: absolute;
+  top: 99px;
+  left: 454px;
+  z-index: 10;
+}
+
+.map-section-dot--5 {
+  position: absolute;
+  top: 90px;
+  left: 605px;
+  z-index: 10;
+}
+
+.map-section__content--end {
+  margin-top: 40px;
+}
+
+.map-section .ellipse-box {
+  top: 116px;
+  left: -61px;
+}
+
+.map-section__ellipse {
+  position: absolute;
+  width: 426px;
+  height: 417px;
+
+  background: rgba(109, 205, 255, 0.23);
+  filter: blur(150px);
+}
