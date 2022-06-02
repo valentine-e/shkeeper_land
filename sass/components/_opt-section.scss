@@ -1,4 +1,5 @@
 .opt-section {
+  position: relative;
   margin-bottom: 140px;
 }
 
@@ -56,4 +57,37 @@
   &--mb {
     margin-bottom: 30px;
   }
+}
+
+.opt-section__ellipse--1 {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  right: 207px;
+  top: 310px;
+
+  background: rgba(109, 205, 255, 0.33);
+  filter: blur(22px);
+}
+
+.opt-section__ellipse--2 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  right: 100px;
+  top: 210px;
+
+  background: #6dcdff;
+  filter: blur(3px);
+}
+
+.opt-section__ellipse--3 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 229px;
+  top: 70px;
+
+  background: #6dcdff;
+  filter: blur(3px);
 }

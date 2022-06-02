@@ -10,7 +10,7 @@
 
 .map-section__box {
   position: relative;
-  right: -10%;
+  right: -17%;
   justify-content: center;
   row-gap: 25px;
   flex-wrap: wrap;
@@ -48,8 +48,7 @@
 }
 
 .map-section__description {
-  white-space: wrap;
-  max-width: 260px;
+  max-width: 200px;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.2;
@@ -96,7 +95,6 @@
 
 .map-section .ellipse-box {
   top: 116px;
-  left: -61px;
 }
 
 .map-section__ellipse {

@@ -52,5 +52,12 @@
 }
 
 .connect-section__button--color {
-  color: #ffffff;
+  color: var(--main-text-color);
+  background: linear-gradient(92.33deg, #439cff -3.92%, #37cfff 105.79%);
+  border-radius: 12px;
+  padding: 12px 21px;
+
+  &:hover {
+    background: #1e79ff;
+  }
 }

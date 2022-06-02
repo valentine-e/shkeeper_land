@@ -93,6 +93,10 @@
   font-size: 14px;
   line-height: 1.5;
   color: rgba(162, 176, 184, 1);
+
+  &:hover {
+    color: var(--main-text-color);
+  }
 }
 
 .footer-nav__c {

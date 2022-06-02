@@ -16,9 +16,21 @@
 }
 
 .video-section {
+  position: relative;
   margin-bottom: 137px;
 }
 
 .video-section .ellipse-box {
   top: 230px;
+}
+
+.video-section__ellipse {
+  position: absolute;
+  width: 636px;
+  height: 636px;
+  left: 54;
+  top: 29;
+
+  background: rgba(109, 205, 255, 0.14);
+  filter: blur(280px);
 }

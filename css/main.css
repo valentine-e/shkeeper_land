@@ -186,7 +186,6 @@ button {
   z-index: 100;
   width: 100%;
   /* Full width */
-  transition: 0.2s;
 }
 
 .header__ellipse {
@@ -881,7 +880,14 @@ button {
 }
 
 .connect-section__button--color {
-  color: #ffffff;
+  color: var(--main-text-color);
+  background: linear-gradient(92.33deg, #439cff -3.92%, #37cfff 105.79%);
+  border-radius: 12px;
+  padding: 12px 21px;
+}
+
+.connect-section__button--color:hover {
+  background: #1e79ff;
 }
 
 .video-section .section-title {
@@ -902,6 +908,7 @@ button {
 }
 
 .video-section {
+  position: relative;
   margin-bottom: 137px;
 }
 
@@ -909,7 +916,18 @@ button {
   top: 230px;
 }
 
+.video-section__ellipse {
+  position: absolute;
+  width: 636px;
+  height: 636px;
+  left: 54;
+  top: 29;
+  background: rgba(109, 205, 255, 0.14);
+  filter: blur(280px);
+}
+
 .opt-section {
+  position: relative;
   margin-bottom: 140px;
 }
 
@@ -969,6 +987,36 @@ button {
   margin-bottom: 30px;
 }
 
+.opt-section__ellipse--1 {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  right: 207px;
+  top: 310px;
+  background: rgba(109, 205, 255, 0.33);
+  filter: blur(22px);
+}
+
+.opt-section__ellipse--2 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  right: 100px;
+  top: 210px;
+  background: #6dcdff;
+  filter: blur(3px);
+}
+
+.opt-section__ellipse--3 {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 229px;
+  top: 70px;
+  background: #6dcdff;
+  filter: blur(3px);
+}
+
 .map-section .section-title {
   margin-bottom: 46px;
 }
@@ -981,7 +1029,7 @@ button {
 
 .map-section__box {
   position: relative;
-  right: -10%;
+  right: -17%;
   justify-content: center;
   row-gap: 25px;
   flex-wrap: wrap;
@@ -1019,8 +1067,7 @@ button {
 }
 
 .map-section__description {
-  white-space: wrap;
-  max-width: 260px;
+  max-width: 200px;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.2;
@@ -1067,7 +1114,6 @@ button {
 
 .map-section .ellipse-box {
   top: 116px;
-  left: -61px;
 }
 
 .map-section__ellipse {
@@ -1403,6 +1449,10 @@ button {
   font-size: 14px;
   line-height: 1.5;
   color: #a2b0b8;
+}
+
+.footer-nav__link:hover {
+  color: var(--main-text-color);
 }
 
 .footer-nav__c {
