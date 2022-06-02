@@ -5,6 +5,12 @@
 .question-section__box {
   margin: 0 auto;
   padding: 50px 110px 40px;
+  background: rgba(242, 242, 242, 0.04);
+  border: 1px solid rgba(221, 221, 221, 0.07);
+  backdrop-filter: blur(22px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 22px;
 }
 
 .question-section__container {

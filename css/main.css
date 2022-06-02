@@ -17,6 +17,7 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -32,6 +33,10 @@ body {
   overflow-x: hidden;
   color: var(--main-text-color);
   background: linear-gradient(99.36deg, #29404a -4.07%, #1e292f 93.88%);
+}
+
+button {
+  cursor: pointer;
 }
 
 :root {
@@ -177,7 +182,7 @@ body {
 .header {
   margin: 12px 0 35px;
   position: sticky;
-  top: 12px;
+  top: 0;
   z-index: 100;
   width: 100%;
   /* Full width */
@@ -432,7 +437,7 @@ body {
 }
 
 .use-section__container {
-  padding: 0 106px 0 106px;
+  max-width: 1028px;
 }
 
 .section-title--use {
@@ -871,8 +876,20 @@ body {
   gap: 20px;
 }
 
+.connect-section__button {
+  z-index: 200;
+}
+
+.connect-section__button--color {
+  color: #ffffff;
+}
+
 .video-section .section-title {
   margin-bottom: 24px;
+}
+
+.ellipse-box {
+  z-index: -100;
 }
 
 .video-section__content {
@@ -1093,7 +1110,10 @@ body {
 }
 
 .help-section__button {
-  min-width: fit-content;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-width: 150px;
 }
 
 .help-section__image {
@@ -1167,7 +1187,6 @@ body {
 .accordion button:hover::after, .accordion button:focus::after {
   cursor: pointer;
   color: var(--faq-blue-color);
-  border: 1px solid var(--faq-blue-color);
 }
 
 .accordion button .accordion-title {
@@ -1181,16 +1200,14 @@ body {
   right: 0;
   width: 22px;
   height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
 }
 
 .accordion button .icon::before {
   display: block;
   position: absolute;
   content: "";
-  top: 10px;
-  left: 6px;
+  top: 9px;
+  left: 5px;
   width: 10px;
   height: 1px;
   background: currentColor;
@@ -1245,6 +1262,11 @@ body {
 .question-section__box {
   margin: 0 auto;
   padding: 50px 110px 40px;
+  background: rgba(242, 242, 242, 0.04);
+  border: 1px solid rgba(221, 221, 221, 0.07);
+  backdrop-filter: blur(22px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 22px;
 }
 
 .question-section__container {

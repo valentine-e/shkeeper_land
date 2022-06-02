@@ -17,6 +17,7 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -33,6 +34,10 @@ body {
   // background-color: var(--primary-background-color);
   color: var(--main-text-color);
   background: linear-gradient(99.36deg, #29404a -4.07%, #1e292f 93.88%);
+}
+
+button {
+  cursor: pointer;
 }
 
 :root {

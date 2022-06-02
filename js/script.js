@@ -1,5 +1,7 @@
 const items = document.querySelectorAll(".accordion button");
 
+items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
 function toggleAccordion() {
   const itemToggle = this.getAttribute("aria-expanded");
 
@@ -11,8 +13,6 @@ function toggleAccordion() {
     this.setAttribute("aria-expanded", "true");
   }
 }
-
-items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
 // old
 
