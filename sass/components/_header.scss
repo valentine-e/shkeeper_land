@@ -1,5 +1,11 @@
 .header {
   margin: 12px 0 35px;
+  position: sticky;
+  top: 12px;
+  z-index: 100;
+
+  width: 100%; /* Full width */
+  transition: 0.2s;
 }
 
 .header__ellipse {

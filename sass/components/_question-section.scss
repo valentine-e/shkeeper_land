@@ -8,6 +8,7 @@
 }
 
 .question-section__container {
+  position: relative;
   margin: 0 auto;
   max-width: 818px;
 }
@@ -30,4 +31,19 @@
 .question-section__button {
   display: flex;
   justify-content: center;
+}
+
+.question-section__illustration {
+  position: absolute;
+  width: 305px;
+  height: 350px;
+  top: -89px;
+  right: -127px;
+}
+
+.question-section__illustration--position {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
