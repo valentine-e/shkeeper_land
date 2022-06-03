@@ -10,9 +10,9 @@
 
 .map-section__box {
   position: relative;
-  right: -17%;
+
   justify-content: center;
-  row-gap: 25px;
+  row-gap: 10px;
   flex-wrap: wrap;
   display: flex;
 }
@@ -71,10 +71,6 @@
 //   z-index: 10;
 // }
 
-.map-section__content--end {
-  margin-top: 40px;
-}
-
 .map-section .ellipse-box {
   top: 116px;
 }
@@ -86,4 +82,107 @@
 
   background: rgba(109, 205, 255, 0.23);
   filter: blur(150px);
+}
+
+.map-thumb__small {
+  padding-left: 5px;
+  position: relative;
+  border-left: 0.5px solid rgba(109, 205, 255, 0.6);
+  height: 110px;
+}
+
+.map-thumb {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+// .map-thumb__small--width {
+//   width: 40%;
+// }
+.map-thumb--position {
+  justify-content: space-between;
+}
+
+.map-thumb__small--width {
+  width: 50%;
+}
+
+.map-thumb__small--bl {
+  border-left: none;
+}
+
+.map-thumb__small--df {
+  width: 70%;
+  display: flex;
+}
+
+.map-dot__big--pos {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: -43%;
+  left: -8%;
+  z-index: 100;
+}
+
+.map-dot__small--pos {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: -35%;
+  left: -5%;
+  z-index: 100;
+}
+
+.map-line {
+  width: 100%;
+  height: 3px;
+  border-bottom: 0.5px solid rgba(109, 205, 255, 0.6);
+}
+
+.big-dot {
+  border-radius: 100px;
+  background-color: var(--main-text-color);
+  box-shadow: 0px 0px 15px 4px #7ebbff;
+  position: absolute;
+  bottom: -18%;
+  left: -2%;
+  width: 11px;
+  height: 11px;
+  &--pos {
+    left: -4%;
+  }
+}
+
+.small-dot {
+  border-radius: 100px;
+  background-color: var(--main-text-color);
+  box-shadow: 0px 0px 15px 4px #7ebbff;
+  position: absolute;
+  top: -21%;
+  left: -1%;
+  width: 7.58px;
+  height: 7.58px;
+}
+
+.map-section__subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.map-section__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.map-thumb__small--none {
+  display: none;
+}
+
+.map-section__subtitle--mb {
+  margin-top: 50px;
 }
