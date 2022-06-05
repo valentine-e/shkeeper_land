@@ -1,5 +1,6 @@
 .tariff-section {
-  margin-bottom: 120px;
+  padding-top: 132px;
+
   position: relative;
 }
 
@@ -83,6 +84,8 @@
   &:hover {
     background-color: #1e79ff;
   }
+
+  transition: background-color var(--timing-function);
 }
 
 .tariff-section__image {

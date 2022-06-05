@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header class="header">
@@ -23,19 +30,25 @@
           </div>
           <ul class="main-nav__list">
             <li>
-              <a class="main-nav__link">Tariffs</a>
+              <a class="main-nav__link" href="#tariffs">Tariffs</a>
             </li>
             <li>
-              <a class="main-nav__link">Features</a>
+              <a class="main-nav__link" href="#features">Features</a>
             </li>
             <li>
-              <a class="main-nav__link">Integrations</a>
+              <a class="main-nav__link" href="#integrations">Integrations</a>
             </li>
             <li>
               <a class="main-nav__link">Resources</a>
             </li>
             <li>
-              <a class="main-nav__link">Contact us</a>
+              <a
+                class="main-nav__link"
+                href="https://github.com/vsys-host/shkeeper.io "
+                target="_blank"
+                rel="noopener noreferrer"
+                >Contact us</a
+              >
             </li>
             <li>
               <a class="button--accent button--header"> Go to GitHub</a>
@@ -61,8 +74,10 @@
             you to accept payments in cryptocurrency.
           </p>
           <div class="hero__buttons">
-            <a class="button--accent hero__button--mr">Get Started</a>
-            <a class="button">How It Works</a>
+            <a class="button--accent hero__button--mr" href="#tariffs"
+              >Get Started</a
+            >
+            <a class="button" href="#video">How It Works</a>
           </div>
         </div>
         <div class="hero-section__thumb">
@@ -135,7 +150,7 @@
 
     <!-- How to Use SHKeeper? -->
 
-    <section class="use-section container">
+    <section class="use-section container" id="howtouse">
       <div class="use-section__ellipse"></div>
       <div class="use-section__ellipse--2"></div>
       <div class="container">
@@ -247,7 +262,7 @@
 
     <!-- Tariff Plans -->
 
-    <section class="tariff-section">
+    <section class="tariff-section" id="tariffs">
       <div class="tariff-section__ellipse"></div>
       <div class="container">
         <h2 class="section-title tariff-section__title">Tariff Plans</h2>
@@ -315,7 +330,9 @@
 
             <a
               class="tariff-section__button tariff-section__button--mt"
-              href="#"
+              href="https://github.com/vsys-host/shkeeper.io "
+              target="_blank"
+              rel="noopener noreferrer"
               >Go to GitHub</a
             >
           </li>
@@ -378,7 +395,13 @@
               </p>
             </div>
 
-            <a class="button--accent" href="#">Explore Virtual Systems</a>
+            <a
+              class="button--accent"
+              href="https://vsys.host/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Explore Virtual Systems</a
+            >
           </div>
         </div>
       </div>
@@ -386,7 +409,7 @@
 
     <!-- Features -->
 
-    <section class="features-section container">
+    <section class="features-section container" id="features">
       <div class="features-section__ellipse"></div>
       <div class="features-section__ellipse--2"></div>
       <div class="features-section__container">
@@ -567,7 +590,7 @@
 
     <!-- Free Integration -->
 
-    <section class="integration-section">
+    <section class="integration-section" id="integrations">
       <div class="integration-section__ellipse"></div>
       <div class="container">
         <div class="integration-section__container">
@@ -741,13 +764,17 @@
               payment benefits of your project.
             </p>
 
-            <div class="connect-section__buttons">
-              <a class="button connect-section__button" href="#"
+            <div class="connect-section__links">
+              <a
+                class="connect-section__button--z connect-section__button"
+                href="https://github.com/vsys-host/shkeeper.io"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Jump to GitHub</a
               >
 
               <a
-                class="connect-section__button connect-section__button--color"
+                class="connect-section__button--z connect-section__button--color"
                 href="#"
                 >Order integration</a
               >
@@ -759,7 +786,7 @@
 
     <!-- How SHKeeper Actually Works? -->
 
-    <section class="video-section">
+    <section class="video-section" id="video">
       <div class="video-section__ellipse"></div>
       <div class="container video-section__container">
         <h2 class="section-title">How SHKeeper Actually Works?</h2>
@@ -959,7 +986,11 @@
                 Please, give us a hand on GitHub.
               </p>
             </div>
-            <a class="button--accent help-section__button" href="#"
+            <a
+              class="button--accent help-section__button"
+              href="https://github.com/vsys-host/shkeeper.io "
+              target="_blank"
+              rel="noopener noreferrer"
               >Go to GitHub</a
             >
           </li>
@@ -1176,7 +1207,7 @@
       <div class="container">
         <div class="footer-nav">
           <div class="footer-nav__content">
-            <a class="footer-nav__logo" href="#"
+            <a class="footer-nav__logo" href="./index.html"
               ><img src="/images/shkeeper-logo.svg" alt="#"
             /></a>
             <p class="footer-nav__description">
@@ -1190,15 +1221,25 @@
             <div>
               <h3 class="footer-nav__subtitle">SOFTWARE</h3>
               <ul>
-                <li><a class="footer-nav__link" href="#">How to Use</a></li>
-                <li><a class="footer-nav__link" href="#">Tariff Plans</a></li>
-                <li><a class="footer-nav__link" href="#">Features</a></li>
-                <li><a class="footer-nav__link" href="#">Integrations</a></li>
+                <li>
+                  <a class="footer-nav__link" href="#howtouse">How to Use</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#tariffs">Tariff Plans</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#features">Features</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#integrations"
+                    >Integrations</a
+                  >
+                </li>
               </ul>
             </div>
 
             <div>
-              <h3 class="footer-nav__subtitle">SOFTWARE</h3>
+              <h3 class="footer-nav__subtitle">RESOURCES</h3>
               <ul>
                 <li>
                   <a class="footer-nav__link" href="#">Knowledge Base</a>

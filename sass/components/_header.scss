@@ -38,10 +38,12 @@
 }
 
 .main-nav__link {
+  color: var(--main-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   padding: 10px;
+  transition: color var(--timing-function);
 
   &:hover {
     color: var(--link-accent-color);

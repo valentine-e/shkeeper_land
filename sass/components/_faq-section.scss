@@ -3,7 +3,7 @@
 }
 
 .faq-section {
-  margin-bottom: 152px;
+  padding-top: 140px;
 }
 
 .faq-section__container {
@@ -58,9 +58,10 @@
         position: absolute;
         content: "";
         top: 9px;
-        left: 5px;
+        left: 6px;
         width: 10px;
-        height: 1px;
+        border-radius: 4px;
+        height: 2px;
         background: currentColor;
       }
       &::after {
@@ -69,7 +70,8 @@
         content: "";
         top: 5px;
         left: 10px;
-        width: 1px;
+        width: 2px;
+        border-radius: 4px;
         height: 10px;
         background: currentColor;
       }

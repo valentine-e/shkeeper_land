@@ -5,7 +5,6 @@
   font-size: 16px;
   line-height: 20px;
   padding: 12px 28px;
-
   background: linear-gradient(90.62deg, #81bdff 0.54%, #5ed9ff 101.81%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -21,6 +20,11 @@
     box-shadow: 0px 0px 16px rgba(94, 217, 255, 0.51);
     text-shadow: 0px 0px 16px rgba(133, 226, 255, 0.55);
   }
+
+  transition: background var(--timing-function),
+    box-shadow var(--timing-function), text-shadow var(--timing-function),
+    -webkit-background-clip var(--timing-function),
+    -webkit-text-fill-color var(--timing-function);
 }
 
 .button--accent {
@@ -34,6 +38,10 @@
     background: linear-gradient(93.06deg, #a2ceff 6.02%, #85e2ff 91.21%);
     box-shadow: 0px 0px 16px rgba(94, 217, 255, 0.51);
   }
+
+  transition: background var(--timing-function),
+    box-shadow var(--timing-function), text-shadow var(--timing-function),
+    -webkit-text-fill-color var(--timing-function);
 }
 
 .bacground-box {

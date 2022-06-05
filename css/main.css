@@ -29,7 +29,7 @@ img {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   overflow-x: hidden;
   color: var(--main-text-color);
   background: linear-gradient(99.36deg, #29404a -4.07%, #1e292f 93.88%);
@@ -49,6 +49,8 @@ button {
   --faq-borderline: rgba(242, 242, 242, 0.08);
   --tariff-button-color: #52a4ff;
   --faq-blue-color: #5ed8ff;
+  --button-darkblue-hover: rgba(30, 121, 255, 1);
+  --timing-function: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -69,6 +71,7 @@ button {
   -webkit-text-fill-color: transparent;
   border-radius: 12px;
   border: 1px solid var(--link-accent-color);
+  transition: background var(--timing-function), box-shadow var(--timing-function), text-shadow var(--timing-function), -webkit-background-clip var(--timing-function), -webkit-text-fill-color var(--timing-function);
 }
 
 .button:hover {
@@ -85,6 +88,7 @@ button {
   color: var(--primary-background-color);
   background: linear-gradient(93.12deg, #81bdff 5.17%, #5ed9ff 100%);
   -webkit-text-fill-color: var(--primary-background-color);
+  transition: background var(--timing-function), box-shadow var(--timing-function), text-shadow var(--timing-function), -webkit-text-fill-color var(--timing-function);
 }
 
 .button--accent:hover {
@@ -217,10 +221,12 @@ button {
 }
 
 .main-nav__link {
+  color: var(--main-text-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   padding: 10px;
+  transition: color var(--timing-function);
 }
 
 .main-nav__link:hover {
@@ -233,7 +239,6 @@ button {
 
 .hero-box {
   display: flex;
-  margin-bottom: 95px;
 }
 
 .hero-section__title {
@@ -358,8 +363,8 @@ button {
 }
 
 .advantages-section {
+  margin-top: 112px;
   position: relative;
-  margin-bottom: 100px;
 }
 
 .advantages-section__box {
@@ -405,7 +410,7 @@ button {
 
 .use-section {
   position: relative;
-  margin-bottom: 132px;
+  padding-top: 100px;
 }
 
 .use-section__ellipse {
@@ -484,7 +489,7 @@ button {
 }
 
 .tariff-section {
-  margin-bottom: 120px;
+  padding-top: 132px;
   position: relative;
 }
 
@@ -562,6 +567,7 @@ button {
   color: var(--main-text-color);
   background: var(--tariff-button-color);
   border-radius: 12px;
+  transition: background-color var(--timing-function);
 }
 
 .tariff-section__button:hover {
@@ -620,7 +626,7 @@ button {
 
 .features-section {
   position: relative;
-  margin-bottom: 100px;
+  padding-top: 129px;
 }
 
 .features-section__ellipse {
@@ -688,7 +694,7 @@ button {
 
 .about-section {
   position: relative;
-  margin-bottom: 100px;
+  padding-top: 120px;
 }
 
 .about-section__title {
@@ -736,8 +742,8 @@ button {
 }
 
 .integration-section {
+  padding-top: 132px;
   position: relative;
-  margin-bottom: 148px;
 }
 
 .integration-section__container {
@@ -810,7 +816,7 @@ button {
 }
 
 .custom-section {
-  margin-bottom: 157px;
+  padding-top: 148px;
 }
 
 .custom-section__title {
@@ -831,7 +837,7 @@ button {
 }
 
 .connect-section {
-  margin-bottom: 147px;
+  padding-top: 147px;
 }
 
 .connect-section__container {
@@ -872,13 +878,35 @@ button {
   color: var(--grey-text-color);
 }
 
-.connect-section__buttons {
+.connect-section__links {
   justify-content: center;
   display: flex;
   gap: 20px;
 }
 
 .connect-section__button {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 28px;
+  transition: background var(--timing-function), border var(--timing-function), -webkit-background-clip var(--timing-function), -webkit-text-fill-colorvar(--timing-function);
+  background: linear-gradient(90.62deg, #81bdff 0.54%, #5ed9ff 101.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 12px;
+  border: 1px solid var(--link-accent-color);
+}
+
+.connect-section__button:hover {
+  border: 1px solid var(--button-darkblue-hover);
+  background: var(--button-darkblue-hover);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.connect-section__button--z {
   z-index: 200;
 }
 
@@ -887,10 +915,11 @@ button {
   background: linear-gradient(92.33deg, #439cff -3.92%, #37cfff 105.79%);
   border-radius: 12px;
   padding: 12px 21px;
+  transition: background var(--timing-function), -webkit-text-fill-colorvar(--timing-function);
 }
 
 .connect-section__button--color:hover {
-  background: #1e79ff;
+  background: var(--button-darkblue-hover);
 }
 
 .video-section .section-title {
@@ -912,7 +941,7 @@ button {
 
 .video-section {
   position: relative;
-  margin-bottom: 137px;
+  padding-top: 147px;
 }
 
 .video-section .ellipse-box {
@@ -931,7 +960,7 @@ button {
 
 .opt-section {
   position: relative;
-  margin-bottom: 140px;
+  padding-top: 140px;
 }
 
 .opt-section .section-title {
@@ -1024,9 +1053,13 @@ button {
   margin-bottom: 46px;
 }
 
+.map-section {
+  padding-top: 140px;
+}
+
 .map-section__container {
   position: relative;
-  margin: 0 auto 140px;
+  margin: 0 auto;
   max-width: 948px;
 }
 
@@ -1162,7 +1195,7 @@ button {
 }
 
 .big-dot--pos {
-  left: -4%;
+  left: -2.5%;
 }
 
 .small-dot {
@@ -1171,7 +1204,7 @@ button {
   box-shadow: 0px 0px 15px 4px #7ebbff;
   position: absolute;
   top: -21%;
-  left: -1%;
+  left: -1.5%;
   width: 7.58px;
   height: 7.58px;
 }
@@ -1202,7 +1235,7 @@ button {
 }
 
 .help-section {
-  margin-bottom: 140px;
+  padding-top: 140px;
 }
 
 .help-section__description {
@@ -1268,7 +1301,7 @@ button {
 }
 
 .faq-section {
-  margin-bottom: 152px;
+  padding-top: 140px;
 }
 
 .faq-section__container {
@@ -1326,9 +1359,10 @@ button {
   position: absolute;
   content: "";
   top: 9px;
-  left: 5px;
+  left: 6px;
   width: 10px;
-  height: 1px;
+  border-radius: 4px;
+  height: 2px;
   background: currentColor;
 }
 
@@ -1338,7 +1372,8 @@ button {
   content: "";
   top: 5px;
   left: 10px;
-  width: 1px;
+  width: 2px;
+  border-radius: 4px;
   height: 10px;
   background: currentColor;
 }
@@ -1375,6 +1410,7 @@ button {
 }
 
 .question-section {
+  padding-top: 152px;
   margin-bottom: 100px;
 }
 
@@ -1383,8 +1419,7 @@ button {
   padding: 50px 110px 40px;
   background: rgba(242, 242, 242, 0.04);
   border: 1px solid rgba(221, 221, 221, 0.07);
-  backdrop-filter: blur(22px);
-  /* Note: backdrop-filter has minimal browser support */
+  backdrop-filter: blur(8px);
   border-radius: 22px;
 }
 
@@ -1522,6 +1557,7 @@ button {
   font-size: 14px;
   line-height: 1.5;
   color: #a2b0b8;
+  transition: color var(--timing-function);
 }
 
 .footer-nav__link:hover {

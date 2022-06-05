@@ -29,7 +29,7 @@ img {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   overflow-x: hidden;
   // background-color: var(--primary-background-color);
   color: var(--main-text-color);
@@ -50,6 +50,8 @@ button {
   --faq-borderline: rgba(242, 242, 242, 0.08);
   --tariff-button-color: #52a4ff;
   --faq-blue-color: #5ed8ff;
+  --button-darkblue-hover: rgba(30, 121, 255, 1);
+  --timing-function: 200ms cubic-bezier(0.4, 0, 0.2, 1);
   // --primary-text-color: #e9ecef;
 
   // --primary-font: Montserrat, sans-serif;
