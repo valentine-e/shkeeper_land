@@ -29,6 +29,7 @@
   height: 229px;
   left: 137px;
   top: 44px;
+  z-index: -5;
 
   background: rgba(89, 149, 255, 0.5);
   filter: blur(100px);
@@ -97,6 +98,7 @@
   height: 4px;
   left: 427px;
   top: 258px;
+  z-index: 5;
 
   background: #6dcdff;
   filter: blur(3px);
@@ -108,6 +110,7 @@
   height: 11px;
   left: 154px;
   top: 328px;
+  z-index: 8;
 
   background: #6dcdff;
   filter: blur(5px);
