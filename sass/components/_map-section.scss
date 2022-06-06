@@ -46,7 +46,7 @@
 }
 
 .map-section__description {
-  max-width: 200px;
+  max-width: 250px;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.2;
@@ -64,16 +64,9 @@
   position: absolute;
   bottom: -40%;
   left: -9%;
-  // transform: translate(50%, 50%);
+
   z-index: 10;
 }
-
-// .map-section-dot--2 {
-//   position: absolute;
-//   top: 99px;
-//   left: 138px;
-//   z-index: 10;
-// }
 
 .map-section .ellipse-box {
   top: 116px;

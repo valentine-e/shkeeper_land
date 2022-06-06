@@ -28,6 +28,7 @@
 }
 
 .button--accent {
+  font-weight: 600;
   padding: 12px 28px;
   border-radius: 12px;
   color: var(--primary-background-color);
@@ -151,4 +152,12 @@
 
   border: 1px solid rgba(193, 214, 219, 0.15);
   filter: blur(8px);
+}
+
+.letter-spasing {
+  letter-spacing: 0.07em;
+}
+
+.font-color {
+  color: #b5c9d3;
 }
