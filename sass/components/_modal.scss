@@ -87,6 +87,9 @@
   }
 
   & input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
     margin: 0;
     padding: 19px 13px;
     border-radius: 8px;
@@ -99,23 +102,6 @@
   & textarea:focus {
     outline-color: #a0c7ff;
   }
-
-  & textarea::placeholder {
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 1.2;
-    color: #223138;
-  }
-}
-
-textarea {
-  height: 112px;
-  resize: none;
-
-  padding: 19px 13px;
-  border-radius: 8px;
-  border: 1px solid #d8d8d8;
-  transition: outline-color 250ms var(--timing-function);
 }
 
 .form__container {
@@ -127,6 +113,20 @@ textarea {
 .submit-container {
   display: flex;
   justify-content: center;
+}
+
+.form__message {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  height: 112px;
+  resize: none;
+
+  padding: 19px 13px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  transition: outline-color 250ms var(--timing-function);
 }
 
 .submit-button {

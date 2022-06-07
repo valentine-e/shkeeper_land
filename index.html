@@ -809,12 +809,13 @@
                 rel="noopener noreferrer"
                 >Jump to GitHub</a
               >
-
-              <a
-                class="connect-section__button--z connect-section__button--color"
-                href="#"
-                >Order integration</a
+              <button
+                type="button"
+                data-modal-open
+                class="connect-section__button--z connect-section__button--color connect-section__button--border"
               >
+                Order integration
+              </button>
             </div>
           </div>
         </div>
@@ -1051,9 +1052,13 @@
                 to contact us directly.
               </p>
             </div>
-            <a class="button--accent help-section__button" href="#"
-              >Contact Support</a
+            <button
+              type="button"
+              data-modal-open
+              class="button--accent help-section__button help-section__button-w"
             >
+              Contact Support
+            </button>
           </li>
           <li class="bacground-box help-section__box">
             <img
@@ -1235,8 +1240,14 @@
               Support available<br />
               24/7/365
             </p>
-            <div class="question-section__button">
-              <a class="button--accent" href="#">Contact Us</a>
+            <div>
+              <button
+                type="button"
+                data-modal-open
+                class="question-section__button button--accent"
+              >
+                Contact Us
+              </button>
             </div>
           </div>
         </div>
@@ -1504,7 +1515,11 @@
 
           <div class="form__field">
             <label for="comment">Message</label>
-            <textarea name="comment" id="comment"></textarea>
+            <textarea
+              class="form__message"
+              name="comment"
+              id="comment"
+            ></textarea>
           </div>
 
           <div class="submit-container">
