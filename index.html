@@ -294,7 +294,13 @@
               <li>Personal customer manager</li>
             </ul>
 
-            <a class="tariff-section__button" href="#">Contact us</a>
+            <button
+              type="button"
+              data-modal-open
+              class="tariff-section__button tariff-section__button--w"
+            >
+              Contact us
+            </button>
           </li>
 
           <li class="tariff-section__item">
@@ -359,7 +365,13 @@
               <li>Integration and support features</li>
             </ul>
 
-            <a class="tariff-section__button" href="#">Contact us</a>
+            <button
+              type="button"
+              data-modal-open
+              class="tariff-section__button tariff-section__button--w"
+            >
+              Contact us
+            </button>
           </li>
         </ul>
       </div>
@@ -1426,71 +1438,82 @@
     </footer>
 
     <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" data-modal-close></button>
+        <button class="close-btn" data-modal-close>
+          <svg width="16" height="16" viewBox="0 0 16 16">
+            <path
+              d="M15.5288 13.2702C16.1537 13.8952 16.1537 14.9076 15.5288 15.5325C15.2188 15.845 14.8088 16 14.3989 16C13.9889 16 13.5799 15.8438 13.268 15.5313L7.99938 10.2654L2.73129 15.53C2.41881 15.845 2.00934 16 1.59988 16C1.19041 16 0.781439 15.845 0.468713 15.53C-0.156238 14.9051 -0.156238 13.8927 0.468713 13.2677L5.7383 7.99813L0.468713 2.73104C-0.156238 2.10609 -0.156238 1.09366 0.468713 0.468713C1.09366 -0.156238 2.10609 -0.156238 2.73104 0.468713L7.99938 5.7408L13.269 0.471213C13.8939 -0.153738 14.9063 -0.153738 15.5313 0.471213C16.1562 1.09616 16.1562 2.10859 15.5313 2.73354L10.2617 8.00312L15.5288 13.2702Z"
+            />
+          </svg>
+        </button>
 
         <!-- Форма -->
 
         <form class="form" action="#">
           <p class="form__title">Send a Request</p>
 
-          <div class="form__field">
-            <label for="name">Имя</label>
+          <label class="form__label">Subject</label>
+          <div class="form__content">
+            <input
+              type="radio"
+              class="btn-check"
+              name="options"
+              value="orderAdministration"
+              id="option1"
+            />
+            <label class="form__button" for="option1">set up order</label>
 
-            <div class="form__container">
-              <input type="text" name="name" id="name" />
-              <svg class="form__icon" width="18px" height="18px"></svg>
-            </div>
+            <input
+              type="radio"
+              class="btn-check"
+              name="options"
+              value="orderCustomIntegration"
+              id="option2"
+            />
+            <label class="form__button" for="option2"
+              >custom integration order</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="options"
+              value="contactSupport"
+              id="option3"
+            />
+            <label class="form__button" for="option3">contact support</label>
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="options"
+              value="sendModule"
+              id="option4"
+            />
+            <label class="form__button" for="option4">send module</label>
           </div>
 
-          <div class="form__field">
-            <label for="tel">Телефон</label>
-
+          <div class="form__field form__field--mb">
             <div class="form__container">
-              <input type="tel" name="tel" id="tel" />
-              <svg class="form__icon" width="18px" height="18px"></svg>
-            </div>
-          </div>
-
-          <div class="form__field">
-            <label for="email">Почта</label>
-
-            <div class="form__container">
+              <label for="email">Email</label>
               <input type="email" name="email" id="email" />
-              <svg class="form__icon" width="18px" height="18px"></svg>
             </div>
           </div>
 
           <div class="form__field">
-            <label for="comment">Комментарий</label>
-            <textarea
-              name="comment"
-              id="comment"
-              placeholder="Введите текст"
-            ></textarea>
-          </div>
-
-          <div class="checkbox">
-            <label class="checkbox__title">
-              <input
-                class="checkbox__input visially-hidden"
-                type="checkbox"
-                name="policy"
-              />
-              <span class="checkbox__icon"></span>
-              <p>
-                Соглашаюсь с рассылкой и принимаю &nbsp;<a
-                  href="#"
-                  class="checkbox-link"
-                  >Условия договора</a
-                >
-              </p>
-            </label>
+            <label for="comment">Message</label>
+            <textarea name="comment" id="comment"></textarea>
           </div>
 
           <div class="submit-container">
-            <button class="submit-button" type="submit">Отправить</button>
+            <button
+              class="submit-button connect-section__button--color"
+              type="submit"
+            >
+              Send
+            </button>
           </div>
         </form>
       </div>

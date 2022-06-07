@@ -19,7 +19,7 @@
     display: block;
     top: 0%;
     left: -155px;
-    width: 100%;
+    width: 40%;
     height: 100%;
   }
 }
@@ -76,10 +76,10 @@
 
 .connect-section__button--z {
   font-weight: 600;
-  z-index: 200;
 }
 
 .connect-section__button--color {
+  text-align: center;
   color: var(--main-text-color);
   background: linear-gradient(92.33deg, #439cff -3.92%, #37cfff 105.79%);
   border-radius: 12px;

@@ -1,6 +1,7 @@
 .button {
   display: inline-block;
   font-style: normal;
+  align-items: center;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -30,6 +31,7 @@
 .button--accent {
   font-weight: 600;
   padding: 12px 28px;
+  align-items: center;
   border-radius: 12px;
   color: var(--primary-background-color);
   background: linear-gradient(93.12deg, #81bdff 5.17%, #5ed9ff 100%);
