@@ -1868,7 +1868,7 @@ button {
   line-height: 1.4;
 }
 
-.blog-link:hover, .blog-link:active {
+.blog-link:hover {
   color: var(--faq-blue-color);
 }
 
@@ -1955,6 +1955,7 @@ button {
   height: 522px;
   left: -132px;
   top: -355px;
+  z-index: -5;
   background: rgba(87, 167, 255, 0.22);
   filter: blur(240px);
 }
@@ -1965,6 +1966,7 @@ button {
   height: 8px;
   left: 19px;
   top: 536px;
+  z-index: -5;
   background: rgba(109, 205, 255, 0.5);
   filter: blur(5px);
 }
@@ -1975,6 +1977,7 @@ button {
   height: 44px;
   left: 86px;
   top: 446px;
+  z-index: -5;
   background: rgba(109, 205, 255, 0.55);
   filter: blur(15px);
 }
@@ -1985,6 +1988,7 @@ button {
   height: 522px;
   left: 200px;
   top: 685px;
+  z-index: -5;
   background: rgba(87, 167, 255, 0.24);
   filter: blur(240px);
 }
@@ -1995,11 +1999,31 @@ button {
   height: 480px;
   left: 944px;
   top: 65px;
+  z-index: -5;
   background: rgba(87, 167, 255, 0.24);
   filter: blur(240px);
 }
 
 .blog__article--mt {
   margin-top: 14px;
+}
+
+.blog-link--active {
+  position: relative;
+  color: aqua;
+}
+
+.blog-link--active::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: #aae9ff;
+  box-shadow: 0px 0px 4px 1px #5ed9ff;
+  border-radius: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10%;
+  z-index: 10;
 }
 /*# sourceMappingURL=main.css.map */
