@@ -93,10 +93,22 @@
   font-size: 14px;
   line-height: 1.5;
   color: rgba(162, 176, 184, 1);
-  transition: color var(--timing-function);
+  transition: color var(--timing-function), fill var(--timing-function);
 
   &:hover {
     color: var(--main-text-color);
+  }
+
+  rect {
+    transition: fill var(--timing-function);
+  }
+
+  svg {
+    transition: fill var(--timing-function);
+  }
+
+  path {
+    transition: fill var(--timing-function);
   }
 }
 

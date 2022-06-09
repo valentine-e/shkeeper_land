@@ -96,9 +96,7 @@
   position: absolute;
   width: 460.24px;
   height: 461.65px;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50% -50%);
+  z-index: -10;
   border: 1px solid rgba(193, 214, 219, 0.1);
 }
 
@@ -111,7 +109,7 @@
   height: 508.24px;
   // left: 465.88px;
   // top: 5634.88px;
-
+  z-index: -10;
   border: 1px solid rgba(193, 214, 219, 0.1);
 }
 
@@ -121,7 +119,7 @@
   height: 662.12px;
   // left: 388.24px;
   // top: 5557.24px;
-
+  z-index: -10;
   border: 1px solid rgba(193, 214, 219, 0.1);
 }
 
@@ -131,7 +129,7 @@
   height: 851.84px;
   // left: 293.65px;
   // top: 5462.65px;
-
+  z-index: -10;
   border: 1px solid rgba(193, 214, 219, 0.1);
 }
 
@@ -141,7 +139,7 @@
   height: 929.65px;
   // left: 255.53px;
   // top: 5424.53px;
-
+  z-index: -10;
   border: 1px solid rgba(193, 214, 219, 0.07);
 }
 
@@ -151,7 +149,7 @@
   height: 1200px;
   // left: 120px;
   // top: 5289px;
-
+  z-index: -10;
   border: 1px solid rgba(193, 214, 219, 0.15);
   filter: blur(8px);
 }
@@ -162,4 +160,13 @@
 
 .font-color {
   color: #b5c9d3;
+}
+
+.video-section__box {
+  webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+
+  margin: 0 auto;
+  overflow: hidden;
 }
