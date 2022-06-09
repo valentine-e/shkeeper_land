@@ -2010,7 +2010,7 @@ button {
 
 .blog-link--active {
   position: relative;
-  color: aqua;
+  color: var(--faq-blue-color);
 }
 
 .blog-link--active::before {

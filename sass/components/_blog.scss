@@ -165,7 +165,7 @@
 
 .blog-link--active {
   position: relative;
-  color: aqua;
+  color: var(--faq-blue-color);
 
   &::before {
     content: "";
